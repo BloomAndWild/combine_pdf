@@ -344,7 +344,7 @@ module CombinePDF
 
     private
 
-    def equal_layers obj1, obj2, layer = 3
+    def equal_layers obj1, obj2, layer = 4
       return true   if(layer == 0)
       return true if obj1.object_id == obj2.object_id
       if obj1.is_a? Hash
